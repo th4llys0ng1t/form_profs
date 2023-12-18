@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Ele aceitou! :D. Você é incrível BG</h1>
-    <form action="nao_aceitou.php" method="post">
+    <form action="aceitou.php" method="post">
         <input type="submit" name="voltar" value="Voltar">
     </form>
 </body>
