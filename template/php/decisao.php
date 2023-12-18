@@ -1,7 +1,7 @@
 <?php 
 
     if(isset($_POST["sim"])){
-        header("Location: ../html/laceitou.html");
+        header("Location: ../html/aceitou.html");
     }
 
     if(isset($_POST["nao"])){
