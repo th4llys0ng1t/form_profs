@@ -5,11 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Não é você</title>
 </head>
+<style>
+    html, body{
+    background-image: url(../img/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    h1{
+        color: #ffff;
+    }
+    form [type="submit"]{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #303049;
+        
+        border: none;
+        margin-top: 20px;
+        width: 209px;
+        height: 40px;
+    }
+</style>
 <body>
+    <center>
     <h1>Desculpa. Você não é quem esperávamos.</h1>
     <form action="sai_dai.php" method="post">
         <input type="submit" name="voltar" value="Voltar">
     </form>
+</center>
 </body>
 </html>
 

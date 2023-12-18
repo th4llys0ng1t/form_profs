@@ -1,17 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<link rel="stylesheet" href="edicoes.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORM de info 4V</title>
 </head>
+<style>
+    html, body{
+    background-image: url(../img/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    
+    .area-login{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .login{
+            margin-top: 90px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #303049;
+            border-radius: 115px;
+            width: 355px;
+            height: 400px;
+            padding: 35px;
+            
+        }
+        h1{
+            color: #ffff;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        label{
+            color: #ffff;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .logo{
+            align-items: center;
+            margin-top: -20;
+        }
+        form [type="submit"]{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #ffff;
+        background-color:  rgb(73, 73, 216) ;
+        border: none;
+        margin-top: 20px;
+        width: 349px;
+        height: 40px;
+        
+        }
+</style>
+
 <body>
-    <h1>Seja vem vindo!</h1>
+    
+    <div class="container-fluid">
+        <center>
+        <section class="area-login">
+            <div class="login">
+                <div class="logo">
+                    <h1>Seja bem vindo!</h1>
+                    <img src="../img/logo.png" alt="" width="180px">
+                </div>
     <form action="../php/escolha.php" method="post">
-        <label for="nome">Qual o seu nome:</label>
+        <label for="nome">Digite o seu nome:</label>
         <input type="text" name="nome" id="nome">
 
         <input type="submit" name="enviar">
     </form>
+</div>
+</section>
+</center>
+</div>
+
 </body>
+
 </html>

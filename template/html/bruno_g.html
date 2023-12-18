@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<link rel="stylesheet" href="style.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bruno Gomes</title>
 </head>
+<style>
+    body{
+    background-image: url(../img/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    h1{
+        color: #ffff;
+        margin-top: 100px;
+    }
+    h3{
+        margin-top: 70px;
+        width: 620px;
+        color: #ffff;
+        text-align: justify;
+        
+        
+        
+    }
+    form [type="submit"]{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #303049;
+        
+        border: none;
+        margin-top: 20px;
+        width: 209px;
+        height: 40px;
+    }
+</style>
 <body>
-    <h1>Bem vindo nosso querido BG</h1>
+    <center>
+    <h1>Bem vindo BG!</h1>
     <h3>Bruno, você sabe que gostamos muito de você como nosso professor. Suas
-        aulas são sempre descontraidas e aprendemos bastante. Nossa jornada no IF
-        está findando e daqui a bem pouquinho iremos nos formar, você deseja ser o 
-        padrinho?
+        aulas são sempre descontraidas e legais de assistir, o que resulta na nossa aprendizagem, além disso a nossa jornada no IF
+        está infelizmente (ou felizmente :D) acabando e daqui a pouquinho iremos nos formar. você sendo o querido que é...
+        aceita ser o nosso padrinho?
     </h3>
     <form action="../php/decisao.php" method="post">
         <input type="submit" name="sim" value="Sim :D">
         <input type="submit" name="nao" value="Não ;(">
     </form>
+    </center>
 </body>
 </html>
