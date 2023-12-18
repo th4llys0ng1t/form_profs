@@ -7,5 +7,16 @@
 </head>
 <body>
     <h1>Ele não aceitou! :|</h1>
+    <form action="nao_aceitou.php" method="post">
+        <input type="submit" name="voltar" value="Voltar">
+    </form>
 </body>
 </html>
+
+<?php 
+
+    if(isset($_POST["voltar"])){
+        header("Location: ../html/index.html");
+    }
+
+?>

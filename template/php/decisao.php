@@ -1,11 +1,11 @@
 <?php 
 
     if(isset($_POST["sim"])){
-        header("Location: ../html/aceitou.html");
+        header("Location: aceitou.php");
     }
 
     if(isset($_POST["nao"])){
-        header("Location: ../html/nao_aceitou.html");
+        header("Location: nao_aceitou.php");
     }
     
 ?>
