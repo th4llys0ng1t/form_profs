@@ -34,12 +34,16 @@
         border-radius: 50px;
         padding: 10px;
     }
+    img{
+        margin-top: 35px;
+    }
 </style>
 <body>
     <center>
         <div class="bg">
             <h1>Ele aceitou! :D. Você é incrível BG</h1>
         </div>  
+        <img src="../img/bg.jpg" alt="" width="850px">
         <form action="aceitou.php" method="post">
             <input type="submit" name="obrigado" value="Muito obrigado, Bruno!!">
         </form>
