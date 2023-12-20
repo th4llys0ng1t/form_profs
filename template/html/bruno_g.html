@@ -20,34 +20,74 @@
         margin-top: 70px;
         width: 620px;
         color: #ffff;
-        text-align: justify;
-        
-        
-        
+        text-align: justify;      
     }
-    form [type="submit"]{
+    form [id="nao"]{
         text-transform: uppercase;
         font-weight: bold;
-        color: #303049;
-        
+        color: #ffff;
+        position: absolute;
         border: none;
         margin-top: 20px;
         width: 209px;
         height: 40px;
+        background-color: #414163;
+        
+        
+    }
+    form [id="sim"]{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #303049;
+        position: relative;
+        border: none;
+        margin-top: 20px;
+        width: 209px;
+        height: 40px;
+        margin-right: 20px;
+
+    }
+    .bg{
+        background-color: #303049;
+        width: 700px;
+        height: 400px;
+        border-radius: 50px;
     }
 </style>
 <body>
     <center>
+    <div class="bg">
     <h1>Bem vindo BG!</h1>
     <h3>Bruno, você sabe que gostamos muito de você como nosso professor. Suas
         aulas são sempre descontraidas e legais de assistir, o que resulta na nossa aprendizagem, além disso a nossa jornada no IF
         está infelizmente (ou felizmente :D) acabando e daqui a pouquinho iremos nos formar. você sendo o querido que é...
         aceita ser o nosso padrinho?
     </h3>
-    <form action="../php/decisao.php" method="post">
-        <input type="submit" name="sim" value="Sim :D">
-        <input type="submit" name="nao" value="Não ;(">
+    <form action="" method="post">
+        <button id="sim"> sim :D</button>
+        <button onmouseover="fuja()" id="nao"> Não ;(</button> 
     </form>
+</div>
     </center>
+
+    <script>
+        function fuja(){
+            var botaoNao = document.getElementById("nao")
+
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+        }
+
+       
+    </script>
 </body>
 </html>
