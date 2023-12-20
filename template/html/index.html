@@ -20,8 +20,8 @@
             height: 70vh;
             justify-content: center;
             align-items: center;
-            
         }
+
         .login{
             margin-top: 90px;
             display: flex;
@@ -31,24 +31,27 @@
             border-radius: 115px;
             width: 355px;
             height: 400px;
-            padding: 35px;
-            
+            padding: 35px;    
         }
+
         h1{
             color: #ffff;
             align-items: center;
             justify-content: center;
             font-weight: bold;
         }
+
         label{
             color: #ffff;
             text-transform: uppercase;
             font-weight: bold;
         }
+
         .logo{
             align-items: center;
             margin-top: -20;
         }
+
         form [type="submit"]{
         text-transform: uppercase;
         font-weight: bold;
@@ -58,12 +61,10 @@
         margin-top: 20px;
         width: 349px;
         height: 40px;
-        
         }
 </style>
 
-<body>
-    
+<body>  
     <div class="container-fluid">
         <center>
         <section class="area-login">
@@ -72,17 +73,15 @@
                     <h1>Seja bem vindo!</h1>
                     <img src="../img/logo.png" alt="" width="180px">
                 </div>
-    <form action="../php/escolha.php" method="post">
-        <label for="nome">Digite o seu nome:</label>
-        <input type="text" name="nome" id="nome">
-
-        <input type="submit" name="enviar">
-    </form>
-</div>
-</section>
-</center>
-</div>
-
+                <form action="../php/escolha.php" method="post">
+                    <label for="nome">Digite o seu nome:</label>
+                    <input type="text" name="nome" id="nome">
+                    <input type="submit" name="enviar">
+                </form>
+            </div>
+        </section>
+        </center>
+    </div>
 </body>
 
 </html>

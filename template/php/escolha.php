@@ -10,6 +10,9 @@
             header("Location: ../php/sai_dai.php");
         }
     }
-   
 
+    if(isset($_POST["sim"])){
+        header("Location: aceitou.php");
+    }
+   
 ?>

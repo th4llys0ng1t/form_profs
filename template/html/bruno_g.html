@@ -8,20 +8,23 @@
 </head>
 <style>
     body{
-    background-image: url(../img/fundo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+        background-image: url(../img/fundo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
+
     h1{
         color: #ffff;
         margin-top: 100px;
     }
+
     h3{
         margin-top: 70px;
         width: 620px;
         color: #ffff;
         text-align: justify;      
     }
+
     form [id="nao"]{
         text-transform: uppercase;
         font-weight: bold;
@@ -31,10 +34,9 @@
         margin-top: 20px;
         width: 209px;
         height: 40px;
-        background-color: #414163;
-        
-        
+        background-color: #414163;  
     }
+
     form [id="sim"]{
         text-transform: uppercase;
         font-weight: bold;
@@ -45,8 +47,19 @@
         width: 209px;
         height: 40px;
         margin-right: 20px;
-
     }
+
+    form [type="submit"]{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #303049;
+        
+        border: none;
+        margin-top: 20px;
+        width: 209px;
+        height: 40px;
+    }
+
     .bg{
         background-color: #303049;
         width: 700px;
@@ -55,21 +68,6 @@
     }
 </style>
 <body>
-    <center>
-    <div class="bg">
-    <h1>Bem vindo BG!</h1>
-    <h3>Bruno, você sabe que gostamos muito de você como nosso professor. Suas
-        aulas são sempre descontraidas e legais de assistir, o que resulta na nossa aprendizagem, além disso a nossa jornada no IF
-        está infelizmente (ou felizmente :D) acabando e daqui a pouquinho iremos nos formar. você sendo o querido que é...
-        aceita ser o nosso padrinho?
-    </h3>
-    <form action="" method="post">
-        <button id="sim"> sim :D</button>
-        <button onmouseover="fuja()" id="nao"> Não ;(</button> 
-    </form>
-</div>
-    </center>
-
     <script>
         function fuja(){
             var botaoNao = document.getElementById("nao")
@@ -86,8 +84,24 @@
             botaoNao.style.left = aleatorioX + "px";
             botaoNao.style.top = aleatorioY + "px";
         }
-
-       
     </script>
+    
+    <center>
+        <div class="bg">
+            <h1>Bem vindo BG!</h1>
+            <h3>Bruno, você sabe que gostamos muito de você como nosso professor. Suas
+                aulas são sempre descontraidas e legais de assistir, o que resulta na nossa aprendizagem, além disso a nossa jornada no IF
+                está infelizmente (ou felizmente :D) acabando e daqui a pouquinho iremos nos formar. você sendo o querido que é...
+                aceita ser o nosso padrinho?
+            </h3>
+
+            <form action="../php/escolha.php" method="post">
+                <input type="submit" value="Sim :D" name="sim">
+                <button onmouseover="fuja()" id="nao"> Não ;(</button> 
+            </form>
+        </div>
+    </center>
+
+
 </body>
 </html>
