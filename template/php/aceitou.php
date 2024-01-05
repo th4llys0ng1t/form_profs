@@ -54,7 +54,7 @@
 <?php 
 
     if(isset($_POST["obrigado"])){
-        header("Location: ../html/index.html");
+        header("Location: ../../index.html");
     }
 
 ?>

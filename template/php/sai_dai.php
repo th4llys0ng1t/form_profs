@@ -49,6 +49,6 @@
 
 <?php 
     if(isset($_POST["voltar"])){
-        header("Location: ../html/index.html");
+        header("Location: ../../index.html");
     }
 ?>
